@@ -1,4 +1,9 @@
 initmem.txt
 goalmem.txt
 main.py
+main.cpp
+memory.cpp
+fastermemory.cpp
+memory.h
+inject.h
 /dump/
