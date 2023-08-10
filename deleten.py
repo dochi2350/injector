@@ -4,4 +4,4 @@ with open('temp.txt', 'r') as file:
 lines = [line for line in lines if len(line.strip().split()) != 4]
 
 for line in lines:
-    print(line)
+    print(line, end = "")
