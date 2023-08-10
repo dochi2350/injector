@@ -1,5 +1,6 @@
 initmem.txt
 goalmem.txt
+temp.txt
 main.cpp
 memory.cpp
 fastermemory.cpp
