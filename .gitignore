@@ -2,8 +2,11 @@ initmem.txt
 goalmem.txt
 temp.txt
 main.cpp
+main.exe
 memory.cpp
 fastermemory.cpp
 memory.h
 inject.h
+MemoryController.h
 /dump/
+/.vscode/
