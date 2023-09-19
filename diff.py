@@ -3,7 +3,7 @@ def read_file(file_path, encoding='utf-8'):
         content = file.readlines()
     return content
 
-def find_word_differences(file1_lines, file2_lines):
+def find_different_parts(file1_lines, file2_lines):
     diff_lines = []
     line_counts = {}
 
@@ -24,17 +24,14 @@ def find_word_differences(file1_lines, file2_lines):
 
     return diff_lines
 
-def main():
-    file1_path = 'initmem.txt'
-    file2_path = 'goalmem.txt'
+file1_path = 'initmem.txt'
+file2_path = 'goalmem.txt'
 
-    file1_lines = read_file(file1_path, encoding='cp949')
-    file2_lines = read_file(file2_path, encoding='cp949')
+file1_lines = read_file(file1_path, encoding = 'cp949')
+file2_lines = read_file(file2_path, encoding = 'cp949')
 
-    diff_lines = find_word_differences(file1_lines, file2_lines)
+diff_lines = find_different_parts(file1_lines, file2_lines)
 
-    print("Differences by word:")
-    for line in diff_lines:
-        print(line)
-
-main()
+print("Different parts by word :")
+for line in diff_lines:
+    print(line)

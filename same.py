@@ -20,17 +20,14 @@ def find_same_parts(file1_lines, file2_lines):
 
     return same_lines
 
-def main():
-    file1_path = 'initmem.txt'
-    file2_path = 'goalmem.txt'
+file1_path = 'initmem.txt'
+file2_path = 'goalmem.txt'
 
-    file1_lines = read_file(file1_path, encoding='cp949')
-    file2_lines = read_file(file2_path, encoding='cp949')
+file1_lines = read_file(file1_path, encoding = 'cp949')
+file2_lines = read_file(file2_path, encoding = 'cp949')
 
-    same_lines = find_same_parts(file1_lines, file2_lines)
+same_lines = find_same_parts(file1_lines, file2_lines)
 
-    print("Same parts by word:")
-    for line in same_lines:
-        print(line)
-
-main()
+print("Same parts by word :")
+for line in same_lines:
+    print(line)
